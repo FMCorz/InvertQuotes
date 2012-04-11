@@ -1,0 +1,5 @@
+[
+	{ "keys": ["ctrl+'"], "command": "invert_quotes" },
+	{ "keys": ["ctrl+shift+'"], "command": "invert_quotes", "args": { "invert_all": true } }
+]
+

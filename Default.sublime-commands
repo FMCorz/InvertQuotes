@@ -1,0 +1,11 @@
+[
+    {
+        "caption": "Invert Quotes: Scope delimiter only",
+        "command": "invert_quotes"
+    },
+    {
+        "caption": "Invert Quotes: All in scope",
+        "command": "invert_quotes",
+        "args": { "invert_all": true }
+    }
+]
