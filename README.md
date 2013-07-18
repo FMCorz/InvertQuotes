@@ -1,7 +1,7 @@
 Invert Quotes
 =============
 
-Plugin for Sublime Text 2 to invert quotes by replacing singles by doubles and vice versa.
+Plugin for Sublime Text to invert quotes by replacing singles by doubles and vice versa.
 
 Usage
 -----
@@ -16,14 +16,21 @@ Will only invert string delimiters
 
 Will invert string delimiters as well as the quotes in the scope of the string, or all the quotes found in the selected text.
 
+Requirements
+------------
+
+Sublime Text 2 or 3.
+
 Installation
 ------------
 
-Clone this repository into the Packages directory. If you don't know where it is, enter the following command in the console:
+Simply clone this repository into the Packages directory.
 
-    print sublime.packages_path()
+	Preferences > Browse Packages...
 
-_To access the console press CTRL + `_
+Alternatively, add the URL of this repository to the Package Control.
+
+	Command palette > Package Control: Add Repository
 
 License
 -------

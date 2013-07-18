@@ -3,7 +3,7 @@
 """
 Invert Quotes
 
-Plugin for Sublime Text 2 to convert single quotes to double quotes and vice versa
+Plugin for Sublime Text to convert single quotes to double quotes and vice versa
 
 Copyright (c) 2012 Frédéric Massart - FMCorz.net
 
@@ -16,9 +16,6 @@ http://github.com/FMCorz/InvertQuotes
 import sublime, sublime_plugin
 
 class InvertQuotesCommand(sublime_plugin.TextCommand):
-
-	def __init__(self, view):
-		sublime_plugin.TextCommand.__init__(self, view)
 
 	def run(self, edit, invert_all = False):
 		view = self.view
@@ -41,7 +38,8 @@ class InvertQuotesCommand(sublime_plugin.TextCommand):
 					view.replace(edit, end, "'" if view.substr(end) == '"' else '"')
 
 			else:
-				from_position = whole_region.begin() -1
+				from_position = whole_region.begin()
+
 				while True:
 					subregion = view.find('"|\'', from_position)
 
